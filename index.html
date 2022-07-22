@@ -1,6 +1,8 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="contentstyle.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="src/script.js"></script>
 </head>
 <body>
 <!-- Title Bar Area -->
@@ -14,9 +16,6 @@
         <h2>Special</h2>
     </div>
     <div class='infoicons'></div>
-</div>
-
-
 </div>
 
 <!-- Body Area -->
@@ -39,7 +38,7 @@
     <!--Page Content Goes Here-->
     <div class='contentarea'>
 
-        <div class="date" id="date">22nd July 2022</div>
+        <div class="date" id="date">date</div>
 
     </div>
 
@@ -50,9 +49,31 @@
 
 <div class="icontrash"></div>
 
+<div class="moonwindow">
+    <div class="moontitlebar">
+        <img src="src/img/moon/moon-title-button.png"></img>
+        <p>Moon</p>
 
-<script src="/src/script.js"></script>
+    </div>
+    <div>
+        <img src="src/img/moon/moon13.bmp" class="moonimage"></img>
+    </div>
+
+</div>
+
+<script>
+
+    $(document).ready(function() {
+        updateDate();
+        moonPhase();
+    });
+
+</script>
+
 
 </body>
+
+
+
 
 </html>

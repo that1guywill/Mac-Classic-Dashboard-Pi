@@ -1,5 +1,5 @@
 function updateDate() {
-    dt = new Date();
+    let dt = new Date();
 
     function english_ordinal_suffix(dt)
     {
@@ -16,4 +16,6 @@ function updateDate() {
     document.getElementById('date').innerHTML = (english_ordinal_suffix(dt) + ' of ' + month + ', ' + year) ;
 }
 
-updateDate();
+function moonPhase(){
+    document.getElementById('moon').innerHTML = ('yassss')
+}

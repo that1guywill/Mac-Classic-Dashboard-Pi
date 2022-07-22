@@ -30,9 +30,8 @@ src: local('Chicago Plain'), url('src/Chicago.woff') format('woff');
 
 
 body{
-    padding: 0;
     margin: 0;
-    height: 95%;
+    height: 100%;
     background-image: url('src/img/background.png')
 }
 
@@ -276,3 +275,44 @@ body{
     font-size: 200%;"
 }
 
+.moonwindow{
+    height: 125px;
+    width: 100px;
+    position: absolute;
+    bottom: 25px;
+    right: 100px;
+    background: black;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.moontitlebar{
+    height: 18px;
+    width: available;
+    background: black;
+    font-family: Chicago;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.moontitlebar img{
+    float: left;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-right: 18px;
+}
+
+.moontitlebar p{
+    margin: 0;
+    float: left;
+    padding-top: 1px;
+}
+
+
+
+.moonimage{
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}

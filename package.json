@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lunarphase-js": "^1.0.10"
+  }
+}
