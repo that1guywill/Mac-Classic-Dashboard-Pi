@@ -222,7 +222,8 @@ body{
 .contentarea {
     width: 68%;
     height: 60%;
-    background-color: white;
+    background: url(src/img/scrollbar-bg.png), #fff ;
+    background-size: 100% 100%;
     border: 1px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -298,17 +299,18 @@ body{
 
 .moontitlebar img{
     float: left;
-    padding-left: 5px;
+    padding-left: 6px;
     padding-top: 3px;
-    padding-right: 18px;
+    padding-right: 17px;
 }
 
 .moontitlebar p{
+    font-family: Chicago;
+    color: white;
     margin: 0;
     float: left;
     padding-top: 1px;
 }
-
 
 
 .moonimage{
