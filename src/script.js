@@ -15,7 +15,3 @@ function updateDate() {
 
     document.getElementById('date').innerHTML = (english_ordinal_suffix(dt) + ' of ' + month + ', ' + year) ;
 }
-
-function moonPhase(){
-    document.getElementById('testmoon').innerHTML = ('yassss')
-}
