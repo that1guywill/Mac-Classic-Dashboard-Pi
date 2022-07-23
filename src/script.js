@@ -17,5 +17,5 @@ function updateDate() {
 }
 
 function moonPhase(){
-    document.getElementById('moon').innerHTML = ('yassss')
+    document.getElementById('testmoon').innerHTML = ('yassss')
 }
