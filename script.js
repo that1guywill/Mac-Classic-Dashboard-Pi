@@ -3,7 +3,7 @@ function updateDate() {
 
     function english_ordinal_suffix(dt)
     {
-        return dt.getDate()+(dt.getDate() % 10 == 1 && dt.getDate() != 11 ? 'st' : (dt.getDate() % 10 == 2 && dt.getDate() != 12 ? 'nd' : (dt.getDate() % 10 == 3 && dt.getDate() != 13 ? 'rd' : 'th')));
+        return dt.getDate()+(dt.getDate() % 10 === 1 && dt.getDate() !== 11 ? 'st' : (dt.getDate() % 10 === 2 && dt.getDate() !== 12 ? 'nd' : (dt.getDate() % 10 === 3 && dt.getDate() !== 13 ? 'rd' : 'th')));
     }
 
     const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -15,3 +15,5 @@ function updateDate() {
 
     document.getElementById('date').innerHTML = (english_ordinal_suffix(dt) + ' of ' + month + ', ' + year) ;
 }
+
+updateDate();

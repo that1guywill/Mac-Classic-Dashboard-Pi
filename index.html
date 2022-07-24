@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="contentstyle.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="script.js"></script>
+
 </head>
 <body>
 <!-- Title Bar Area -->
@@ -51,22 +51,26 @@
 
 <div class="moonwindow">
     <div class="moontitlebar">
-        <img src="src/img/moonimages/moontitlebutton.jpg"></img>
+        <img id="moonimage" src="src/img/moonimages/moontitlebutton.jpg"></img>
         <p>Moon</p>
 
     </div>
     <div>
-        <img src="src/img/moonimages/moon13.jpg" class="moonimage"></img>
+        <img src="src/img/moonimages/moon13.jpg" class="moonimage" id="moonphaseimage"></img>
     </div>
+
 
 </div>
 
-<script>
 
+<script src="script.js"></script>
+<script src="moonscript.js"></script>
+
+<script>
     $(document).ready(function() {
         updateDate();
-    });
 
+    });
 </script>
 
 
