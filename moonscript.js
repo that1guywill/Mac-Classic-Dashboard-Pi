@@ -5,7 +5,6 @@ fetch(`https://api.weatherapi.com/v1/astronomy.json?key=609cfefc62374bfa95c20464
     .then((data) => {
         let moonphase = data.astronomy.astro.moon_phase;
         let moonpercent = data.astronomy.astro.moon_illumination;
-        console.log(moonphase)
         changeMoonImg(moonphase,moonpercent);
     })
 
