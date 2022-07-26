@@ -13,7 +13,10 @@ function updateDate() {
     let month = monthNames[dt.getMonth()];
     let year = dt.getFullYear();
 
-    document.getElementById('date').innerHTML = (english_ordinal_suffix(dt) + ' of ' + month + ', ' + year) ;
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let day = weekday[dt.getDay()];
+
+    document.getElementById('date').innerHTML = (day + ', '+ english_ordinal_suffix(dt) + ' of ' + month + ', ' + year) ;
 }
 
 updateDate();
