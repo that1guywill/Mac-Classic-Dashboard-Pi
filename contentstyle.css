@@ -331,16 +331,13 @@ body{
     flex-flow: column;
     height: 55%;
     border: 1px solid black;
-    margin: 5px;
+    margin: 9px 5px 5px;
     float:left;
 }
 
 .datewidget img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 3px;
+    margin: 10px auto 3px;
 }
 
 .testwidget{
@@ -351,6 +348,7 @@ body{
     margin: 5px;
     float:left;
     width: 129px;
+    background-image: url('src/img/background2.png')
 }
 
 .date {
@@ -360,12 +358,11 @@ body{
 .weatherwidget{
     display: flex;
     flex-flow: column;
-    height: 88%;
+    height: 85%;
     border: 1px solid black;
-    margin: 5px;
     width: 55%;
     float:right;
-    margin-right: 25px;
+    margin: 9px 25px 5px 5px;
 }
 
 .weatherwidgetwidget img{
