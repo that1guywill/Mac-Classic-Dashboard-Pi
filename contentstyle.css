@@ -31,8 +31,9 @@ src: local('Chicago Plain'), url('src/Chicago.woff') format('woff');
 
 body{
     margin: 0;
-    height: 100%;
-    background-image: url('src/img/background.png')
+    background-image: url('src/img/background.png');
+    height: 92vh;
+    width: 100vw;
 }
 
 .titlebar{ 
