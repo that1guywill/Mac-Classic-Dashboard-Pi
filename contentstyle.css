@@ -344,17 +344,19 @@ body{
 .testwidget{
     display: flex;
     flex-flow: column;
-    height: 25%;
+    height: 52px;
     border: 1px solid black;
     margin: 5px;
     float:left;
-    width: 129px;
+    width: 133px;
     background-image: url('src/img/background2.png')
 }
 
 .date {
     font-family: Geneva;
     font-size: 170%;"
+    font-smooth:never;
+    box-shadow:0 0 ;
 }
 .weatherwidget{
     display: flex;
