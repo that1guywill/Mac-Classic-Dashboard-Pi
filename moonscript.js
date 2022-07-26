@@ -89,5 +89,5 @@ function currentWeather(temp,humidity,high,low,conditions) {
     document.getElementById("humidity").innerHTML = (humidity + '%');
     document.getElementById("temp-high").innerHTML = ('High: ' + high);
     document.getElementById("temp-low").innerHTML = ('Low: ' +low);
-    document.getElementById("conditions").innerHTML = (conditions);
+    document.getElementById("conditions").innerHTML = ('Conditions: ' + conditions);
 }
