@@ -228,6 +228,7 @@ body{
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     margin: auto auto 80px;
+    display: inline-block;
 
 }
 .currentTime {
@@ -316,13 +317,22 @@ body{
     object-fit: fill;
 }
 
+
+.leftcolumn{
+    flex-flow: column;
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+}
+
+
 .datewidget{
     display: flex;
     flex-flow: column;
-    height: 88%;
+    height: 55%;
     border: 1px solid black;
     margin: 5px;
-    width: 35%;
+    float:left;
 }
 
 .datewidget img{
@@ -333,8 +343,35 @@ body{
     margin-bottom: 3px;
 }
 
+.testwidget{
+    display: flex;
+    flex-flow: column;
+    height: 25%;
+    border: 1px solid black;
+    margin: 5px;
+    float:left;
+    width: 129px;
+}
+
 .date {
-    font-family: Chicago;
-    font-weight: normal;
+    font-family: Geneva;
     font-size: 170%;"
+}
+.weatherwidget{
+    display: flex;
+    flex-flow: column;
+    height: 88%;
+    border: 1px solid black;
+    margin: 5px;
+    width: 55%;
+    float:right;
+    margin-right: 25px;
+}
+
+.weatherwidgetwidget img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
