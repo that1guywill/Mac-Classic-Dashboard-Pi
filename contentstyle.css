@@ -389,6 +389,7 @@ body{
     display:inline-block;
     font-family: Geneva;
     margin-bottom: 0;
+    margin-top: 12px;
 }
 
 .weatherwidgettextsmaller {
@@ -397,5 +398,4 @@ body{
     margin-bottom: 0;
     margin-top: 0;
 }
-
 

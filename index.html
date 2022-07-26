@@ -52,7 +52,7 @@
             <img class="weatherwidgeticon" src="src/img/weather-rooster.png">
 
             <div>
-                <p class="weatherwidgettext">Temperature:  </p>
+                <p class="weatherwidgettext">Temperature: </p>
                 <p class="weatherwidgettext" id="temp">test celcius </p>
                 <div>
                     <p class="weatherwidgettextsmaller" id="temp-high">H: </p>
@@ -62,58 +62,46 @@
             </div>
 
             <div>
-                <p class="weatherwidgettext">Humidity:  </p>
+                <p class="weatherwidgettext">Humidity: </p>
                 <p class="weatherwidgettext" id="humidity">test% </p>
             </div>
-
-
             <div>
                 <p class="weatherwidgettext" id="conditions">test% </p>
             </div>
 
-            
         </div>
-
-
 
 
     </div>
 
 
- </div>
+</div>
 
- <div class="iconhdd"></div>
+<div class="iconhdd"></div>
 
- <div class="icontrash"></div>
+<div class="icontrash"></div>
 
- <div class="moonwindow">
-     <div class="moontitlebar">
-         <img id="moonimage" src="src/img/moonimages/moontitlebutton.jpg"></img>
-         <p>Moon</p>
+<div class="moonwindow">
+    <div class="moontitlebar">
+        <img id="moonimage" src="src/img/moonimages/moontitlebutton.jpg"></img>
+        <p>Moon</p>
 
-     </div>
-     <div>
-         <img src="src/img/moonimages/blank.png" class="moonimage" id="moonphaseimage"></img>
-     </div>
+    </div>
+    <div>
+        <img src="src/img/moonimages/blank.png" class="moonimage" id="moonphaseimage"></img>
+    </div>
+</div>
 
+<script src="script.js"></script>
+<script src="moonscript.js"></script>
 
- </div>
+<script>
+    $(document).ready(function () {
+        updateDate();
 
+    });
+</script>
 
- <script src="script.js"></script>
- <script src="moonscript.js"></script>
+</body>
 
- <script>
-     $(document).ready(function() {
-         updateDate();
-
-     });
- </script>
-
-
- </body>
-
-
-
-
- </html>
+</html>
