@@ -1,11 +1,17 @@
-fetch(`https://api.weatherapi.com/v1/astronomy.json?key=609cfefc62374bfa95c204645222307&q=Pl5&dt=2022-07-23`, {
+fetch(`https://api.weatherapi.com/v1/forecast.json?key=609cfefc62374bfa95c204645222307&q=PL5&days=1&aqi=no&alerts=no`, {
     method: 'get'
 })
     .then(res => res.json())
     .then((data) => {
-        let moonphase = data.astronomy.astro.moon_phase;
-        let moonpercent = data.astronomy.astro.moon_illumination;
+        let moonphase = data.forecast.forecastday[0].astro.moon_phase;
+        let moonpercent = data.forecast.forecastday[0].astro.moon_illumination;
+        let temperature = data.forecast.forecastday[0].day.avgtemp_c;
+        let humidity = data.forecast.forecastday[0].day.avghumidity;
+        let temp_high = data.forecast.forecastday[0].day.maxtemp_c;
+        let temp_low = data.forecast.forecastday[0].day.mintemp_c;
+        let conditions = data.forecast.forecastday[0].day.condition.text;
         changeMoonImg(moonphase,moonpercent);
+        currentWeather(temperature,humidity,temp_high,temp_low,conditions);
     })
 
 function changeMoonImg(phase,illumination) {
@@ -74,6 +80,14 @@ function changeMoonImg(phase,illumination) {
 
     }
 
+}
 
 
+
+function currentWeather(temp,humidity,high,low,conditions) {
+    document.getElementById("temp").innerHTML = (temp + ' celcius');
+    document.getElementById("humidity").innerHTML = (humidity + '%');
+    document.getElementById("temp-high").innerHTML = ('High: ' + high);
+    document.getElementById("temp-low").innerHTML = ('Low: ' +low);
+    document.getElementById("conditions").innerHTML = (conditions);
 }

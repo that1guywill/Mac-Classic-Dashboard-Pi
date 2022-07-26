@@ -279,8 +279,8 @@ body{
     height: 125px;
     width: 100px;
     position: absolute;
-    bottom: 25px;
-    right: 100px;
+    bottom: 30px;
+    right: 76px;
     background: black;
     border: 2px solid black;
     border-radius: 4px;
@@ -368,10 +368,25 @@ body{
     margin: 9px 25px 5px 5px;
 }
 
-.weatherwidgetwidget img{
+.weatherwidgeticon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 3px;
+    margin-top: 5px;
+    height: 50px;
+    width: 35px;
 }
+.weatherwidgettext {
+    display:inline-block;
+    font-family: Geneva;
+    margin-bottom: 0;
+}
+
+.weatherwidgettextsmaller {
+    display:inline-block;
+    font-family: Geneva;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
